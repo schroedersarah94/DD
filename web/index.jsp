@@ -8,6 +8,20 @@
 
     <jsp:body>
         <p>This is the home page (with login prompt?)</p>
+
+        <div class="container-fluid">
+            <div class="tool-tile">
+
+            </div>
+            <div class="tool-tile">
+
+            </div>
+            <div class="tool-tile">
+
+            </div>
+
+        </div>
+
     </jsp:body>
 
 </t:wrapper>

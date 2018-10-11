@@ -1,0 +1,13 @@
+.spell-tile {
+    background-color: #e9ecef;
+    margin: 3px;
+    display: inline-flex;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: #a7a5a5 inset 0px 0px 1px 0px;
+}
+
+.spell-name {
+    font-size: 1.6em;
+    margin-right: 1.2em;
+}
