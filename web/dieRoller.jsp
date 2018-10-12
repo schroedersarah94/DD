@@ -3,11 +3,11 @@
 
 <t:wrapper>
     <jsp:attribute name="header">
-      <h1>Rule Book</h1>
+      <h1>Die Roller!</h1>
     </jsp:attribute>
 
     <jsp:body>
-        <h4>Here's a bunch of rules to reference!!</h4>
-        <!-- content of the body!! rules go here! -->
+        <h4>Pick a die and roll to get a rando number!!woooooooo</h4>
+        <!-- content of the body!! die choice and results go here! -->
     </jsp:body>
 </t:wrapper>
