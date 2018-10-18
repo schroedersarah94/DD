@@ -1,5 +1,22 @@
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="org.sqlite.*" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
+
+<head>
+    <%
+        Class.forName("org.sqlite.JDBC");
+        Connection conn = DriverManager.getConnection("jdbc:sqlite:dungeondatabase");
+        Statement statement = conn.createStatement();
+
+        ResultSet results = statement.executeQuery("select * from spells;");
+
+        out.print(results);
+    %>
+</head>
 
 <t:wrapper>
     <jsp:attribute name="header">
