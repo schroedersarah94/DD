@@ -1,5 +1,7 @@
-.spell-tile {
-    background-color: #e9ecef;
+
+/* Row Styling */
+.spell-row {
+    background-color: #f5f5f5;
     margin: 3px;
     display: inline-flex;
     padding: 10px;
@@ -7,7 +9,57 @@
     box-shadow: #a7a5a5 inset 0px 0px 1px 0px;
 }
 
+/* Flex-styles for responsive table layout */
+.spell-row div, .spell-headerRow div  {
+    flex-direction: row;
+}
+.spell-level, .spell-castTime, .spell-duration, .spell-range, .monster-headerRow div, .monster-row div {
+    flex: 1;
+}
 .spell-name {
-    font-size: 1.6em;
-    margin-right: 1.2em;
+    flex: 2;
+}
+.spell-description {
+    flex: 3;
+}
+
+.spell-headerRow, .monster-headerRow {
+    display: flex;
+    font-size: 26px;
+    margin-bottom: .5em;
+}
+
+.spell-content, .monster-content {
+    margin: auto;
+    width: 85%;
+}
+.spell-content input, .spell-content .input-group-text  {
+    font-size: 30px;
+}
+
+.pageHeader {
+    font-size: 44px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: .5em;
+}
+
+.pageHeader .fas, .pageHeader .fas {
+    font-size: 200%;
+    padding-top: 30px;
+}
+.spell-pageInfo {
+    text-align: center;
+    font-size: 30px;
+    width: 55%;
+    margin: auto;
+    margin-bottom: .5em;
+}
+
+#showStats {
+    border: 2px solid black;
+    border-radius: 15px;
+    display: block;
+    padding: 40px;
+    margin-top: 1.5em;
 }

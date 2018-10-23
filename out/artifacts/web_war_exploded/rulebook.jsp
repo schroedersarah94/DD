@@ -3,11 +3,14 @@
 
 <t:wrapper>
     <jsp:attribute name="header">
-      <h1>Rule Book</h1>
+      <div class="pageHeader">
+          <div class="fas fa-book"></div>
+          <div>Rule Book</div>
+      </div>
     </jsp:attribute>
 
     <jsp:body>
-        <h4>Here's a bunch of rules to reference!!</h4>
-
+        <h4>Here's a collection of rules to follow!</h4>
+        <!-- content of the body!! rules go here! -->
     </jsp:body>
 </t:wrapper>
