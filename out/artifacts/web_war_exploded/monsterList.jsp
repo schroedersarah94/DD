@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-            <div id="showStats">
+            <div id="showStats" style="display:none">
                 <div class="monster-row row" >
                     <div class="col-md-3:"><strong>Type:</strong><br/>Large Aberration</div>
                     <div class="col-md-3:"><strong>Strength:</strong><br/>21(+5)</div>

@@ -1,3 +1,8 @@
+body {
+    font-family: 'Roboto Slab', serif !important;
+    background-color: #76543a;
+    color: white;
+}
 
 /* Row Styling */
 .spell-row {
@@ -38,7 +43,7 @@
 }
 
 .pageHeader {
-    font-size: 44px;
+    font-size: 38px;
     text-align: center;
     margin: auto;
     margin-bottom: .5em;
@@ -62,4 +67,50 @@
     display: block;
     padding: 40px;
     margin-top: 1.5em;
+}
+
+.die-btns{
+    display: flex;
+}
+.die-btn {
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0.5em;
+    background-color: transparent;
+    font-size: 26px;
+    flex: 1;
+}
+
+.die-results {
+    display: flex;
+}
+.die-results div {
+    flex: 1;
+}
+
+.die-result-panel {
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+.die-result-panel svg {
+    width: 250px;
+    position: absolute;
+}
+.die-result {
+    font-size: 150px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+}
+.die-logging {
+    overflow-y: scroll;
+    height: 11vw;
+}
+.die-log-container {
+    font-size: 28px;
+    padding: 20px;
+    width: 50%;
 }

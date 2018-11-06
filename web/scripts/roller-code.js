@@ -1,10 +1,10 @@
-function displayNum(num, randoNum){
-    var placeholder;
-    placeholder = document.getElementsByClassName('placeholder' + num)[0];
-    placeholder.innerHTML = randoNum;
-}
+function displayNum(num, randomNum){
+    var log = document.getElementsByClassName("die-logging")[0];
+    var result = document.getElementsByClassName("die-result")[0];
 
-//var button = document.getElementsByClassName('button');
+    result.innerHTML = randomNum;
+    log.insertAdjacentHTML('beforeend', "<div class='die-roll'>D" + num + " result: " + randomNum + "</div>");
+}
 
 function rollDie(numOfSides) {
     var die = {
@@ -16,4 +16,10 @@ function rollDie(numOfSides) {
     }
     var rollResult = die.roll();
     displayNum(numOfSides, rollResult);
+}
+
+function clearLogs() {
+    var log = document.getElementsByClassName("die-logging")[0];
+
+    log.innerHTML = "";
 }
