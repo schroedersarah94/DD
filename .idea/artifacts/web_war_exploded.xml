@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="DungeonDynamics" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="sqlite-jdbc-3.8.10.1" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/sqlite-jdbc-3.8.10.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/sqlite-jdbc-3.23.1.jar" />
+        </element>
       </element>
     </root>
   </artifact>

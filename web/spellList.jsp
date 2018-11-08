@@ -1,4 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.sql.*" %>
+<%@page import="org.sqlite.*" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:wrapper>
@@ -10,6 +12,7 @@
     </jsp:attribute>
 
     <jsp:body>
+
         <div class="spell-pageInfo">View base-level spells and spell details here. Search for a specific spell using the search box below.</div>
 
         <div class="spell-content">

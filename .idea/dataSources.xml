@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="dungeonDynamics.sqlite" uuid="536ea4f4-0d49-4c89-ba3f-6db9784fcc38">
+    <data-source source="LOCAL" name="DungeonDynamics.db" uuid="eba94480-7f5f-4c01-a9be-cb24f82b7c19">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Sarah\Documents\CSI2999_SophProj\SQLite\dungeonDynamics.sqlite</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\Sarah\Downloads\sqlite-tools-win32-x86-3250300\sqlite-tools-win32-x86-3250300\DungeonDynamics.db</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>

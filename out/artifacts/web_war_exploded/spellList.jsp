@@ -1,4 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.sql.*" %>
+<%@page import="org.sqlite.*" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:wrapper>
@@ -10,6 +12,36 @@
     </jsp:attribute>
 
     <jsp:body>
+        <%
+            try {
+                Class.forName("org.sqlite.JDBC");
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+            Connection conn = null;
+            try {
+                conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sarah\\Downloads\\sqlite-tools-win32-x86-3250300\\sqlite-tools-win32-x86-3250300\\DungeonDynamics.db");
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            //Statement stat = conn.createStatement();
+
+            //ResultSet rs = stat.executeQuery("SELECT * FROM CHARACTER;");
+
+            /*while (rs.next()) {
+                out.println("<tr>");
+                out.println("<td>" + rs.getString("id") + "</td>");
+                out.println("</tr>");
+            }
+
+            rs.close();
+            conn.close();*/
+        %>
+
+
+
+
+
         <div class="spell-pageInfo">View base-level spells and spell details here. Search for a specific spell using the search box below.</div>
 
         <div class="spell-content">
