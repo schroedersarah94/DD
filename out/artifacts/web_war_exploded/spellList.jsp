@@ -1,7 +1,40 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.sql.*" %>
-<%@page import="org.sqlite.*" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%@page import="com.dungeondynamics.jsp.Spell" %>
+<%@ page import="java.sql.*" %>
+
+<!-- request.setAttribute("results", Spell.connect());-->
+
+<%
+    Connection conn = null;
+    PreparedStatement statement = null;
+    try{
+        Class.forName("org.sqlite.JDBC");
+        conn = DriverManager.getConnection("jdbc:sqlite:C:/Repositories/DungeonDynamics.db", "root", "");
+        String sql = "Select * from CHARACTER";
+        statement = conn.prepareStatement(sql);
+        ResultSet rs = statement.executeQuery();
+
+        if(rs.next()){
+            System.out.println(rs);
+        }
+        else{
+            System.out.println("no results :(");
+        }
+    }
+    catch (SQLException e){
+        System.out.println("SQL EXCEPTION:" + e.getMessage());
+    }
+    finally {
+        try {
+            if(conn != null)
+                conn.close();
+        }
+        catch (SQLException e){
+            System.out.println("SQL EXCEPTION is closing exception:" + e.getMessage());
+        }
+    }
+%>
 
 <t:wrapper>
     <jsp:attribute name="header">
@@ -12,35 +45,6 @@
     </jsp:attribute>
 
     <jsp:body>
-        <%
-            try {
-                Class.forName("org.sqlite.JDBC");
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
-            Connection conn = null;
-            try {
-                conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Sarah\\Downloads\\sqlite-tools-win32-x86-3250300\\sqlite-tools-win32-x86-3250300\\DungeonDynamics.db");
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            //Statement stat = conn.createStatement();
-
-            //ResultSet rs = stat.executeQuery("SELECT * FROM CHARACTER;");
-
-            /*while (rs.next()) {
-                out.println("<tr>");
-                out.println("<td>" + rs.getString("id") + "</td>");
-                out.println("</tr>");
-            }
-
-            rs.close();
-            conn.close();*/
-        %>
-
-
-
-
 
         <div class="spell-pageInfo">View base-level spells and spell details here. Search for a specific spell using the search box below.</div>
 
