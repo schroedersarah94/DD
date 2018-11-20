@@ -1,0 +1,88 @@
+*{ text-align: center;
+}
+
+.space-box{
+    padding: 50px;
+}
+
+/* TOP OF TAB STYLING */
+.tabList {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: lightblue;
+}
+
+/* Style the buttons inside the tab */
+.tabList button {
+    background-color: inherit;
+    font-size: 23px;
+    float: left;
+    padding: 19px;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+}
+
+/* Change background color of buttons on hover */
+.tabList button:hover {
+    background-color: cadetblue;
+}
+
+/* Create an active/current tablink class */
+.tabList button.active {
+    background-color: mediumblue;
+}
+
+
+
+.accordion {
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 960px;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.4s;
+    margin: 20px;
+}
+
+.active, .accordion:hover {
+    background-color: midnightblue;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: midnightblue;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 960px;
+    margin: auto;
+}
+b{
+    text-align: left;
+    font-size: 20px;
+}
+
+
+/*BOTTOM OF DROPDOWN STYLING*/
+
+
+
+
+a:hover{
+    color: red;
+}

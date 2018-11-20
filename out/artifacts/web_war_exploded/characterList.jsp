@@ -7,7 +7,8 @@
     </jsp:attribute>
 
     <jsp:body>
-        <h4>This is a list of characters that have been made!</h4>
+        <a class="btn btn-info" href="characterForm.html" >Create a new Character?</a>
+        <h4>List of created characters</h4>
 
     </jsp:body>
 </t:wrapper>

@@ -27,7 +27,7 @@
 
         <div class="container-fluid">
             <div class="row" style="display: flex">
-                <div class="col-md-2:" style="border: 1px solid black; border-radius: 15px; align: center; margin: 1%; padding: 2%; max-width: 20%">
+                <a href="monsterList.jsp" class="col-md-2:" style="color: black; text-decoration: none; border: 1px solid black; border-radius: 15px; align: center; margin: 1%; padding: 2%; max-width: 20%">
                     <h2 align="center">Monsters</h2>
                     <br/>
                     <br/>
@@ -39,10 +39,10 @@
                     <br/>
                     <br/>
                     <div class="circle"></div>
-                </div>
+                </a>
 
-                <div class="col-md-2"
-                     style="border: 1px solid black; border-radius: 15px; margin: 1%; padding: 2%; max-width: 20%">
+                <a href="itemList.jsp" class="col-md-2"
+                     style="color: black; text-decoration: none; border: 1px solid black; border-radius: 15px; margin: 1%; padding: 2%; max-width: 20%">
                     <h2 align="center">Items</h2>
                     <br/>
                     <br/>
@@ -55,10 +55,10 @@
                     <br/>
 
                     <div class="circle"></div>
-                </div>
+                </a>
 
-                <div class="col-md-2"
-                     style="border: 1px solid black; border-radius: 15px; margin: 1%; padding: 2%; max-width: 20%;">
+                <a href="characterList.jsp" class="col-md-2"
+                     style="color: black; text-decoration: none; border: 1px solid black; border-radius: 15px; margin: 1%; padding: 2%; max-width: 20%;">
                     <h2 align="center">Character Customization</h2>
                     <br/>
                     <div>This is where you can create your character. Hopefully
@@ -69,10 +69,10 @@
                     <br/>
                     <div class="circle"></div>
 
-                </div>
+                </a>
 
-                <div class="col-md-2"
-                     style="border: 1px solid black; border-radius: 15px; margin: 1%; padding: 2%; max-width: 20%">
+                <a href="spellList.jsp" class="col-md-2"
+                     style="color: black; text-decoration: none; border: 1px solid black; border-radius: 15px; margin: 1%; padding: 2%; max-width: 20%">
                     <h2 align="center">Spells</h2>
                     <br/>
                     <br/>
@@ -84,9 +84,9 @@
                     <br/>
                     <br/>
                     <div class="circle"></div>
-                </div>
-                <div class="col-md-2"
-                     style="border: 1px solid black; border-radius: 15px; margin: 1%; padding: 2%; max-width: 20%">
+                </a>
+                <a href="dieRoller.jsp" class="col-md-2"
+                     style="color: black; text-decoration: none; border: 1px solid black; border-radius: 15px; margin: 1%; padding: 2%; max-width: 20%">
                     <h2 align="center">Dice Roller</h2>
                     <br/>
                     <br/>
@@ -96,7 +96,7 @@
                     <br/>
                     <br/>
                     <div class="circle"></div>
-                </div>
+                </a>
             </div>
         </div>
 

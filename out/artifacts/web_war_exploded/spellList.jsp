@@ -3,39 +3,6 @@
 <%@page import="com.dungeondynamics.jsp.Spell" %>
 <%@ page import="java.sql.*" %>
 
-<!-- request.setAttribute("results", Spell.connect());-->
-
-<%
-    Connection conn = null;
-    PreparedStatement statement = null;
-    try{
-        Class.forName("org.sqlite.JDBC");
-        conn = DriverManager.getConnection("jdbc:sqlite:C:/Repositories/DungeonDynamics.db", "root", "");
-        String sql = "Select * from CHARACTER";
-        statement = conn.prepareStatement(sql);
-        ResultSet rs = statement.executeQuery();
-
-        if(rs.next()){
-            System.out.println(rs);
-        }
-        else{
-            System.out.println("no results :(");
-        }
-    }
-    catch (SQLException e){
-        System.out.println("SQL EXCEPTION:" + e.getMessage());
-    }
-    finally {
-        try {
-            if(conn != null)
-                conn.close();
-        }
-        catch (SQLException e){
-            System.out.println("SQL EXCEPTION is closing exception:" + e.getMessage());
-        }
-    }
-%>
-
 <t:wrapper>
     <jsp:attribute name="header">
         <div class="pageHeader">
