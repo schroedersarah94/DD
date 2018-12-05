@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,114 +7,126 @@
 </head>
 <body>
 <form action="characterSheet.jsp" method="post">
-    <h2>Character Creation</h2>
+    <h2>Character Creation</h2>   
     <div>
-        This will be the name of the character you have created.<br>
-        Enter Character Name:<br><input type="text" name="characterName"><br><br>
-
-        This is will be the class you have picked and the level in which you want to start at.<br>
-        Enter Class and level: <br><input type="text" name="classAndLevel"><br><br>
-
-        This will be your characters history.<br>
-        Enter Background: <br><input type="text" name="background"><br><br>
-
-        This is your real name.<br>
-        Enter Player Name: <br><input type="text" name="playerName"><br><br>
-
-        This is where you will choose what group your affiliated with.<br>
-        Enter Faction: <br><input type="text" name="faction"><br><br>
-
-        This is where you will choose your race. Your Race determines looks and natural talents.<br>
-        Enter Race: <br><input type="text" name="race"><br><br>
-
-        This is what your general outlook on other players/characters will be like.<br>
-        Enter Alignment: <br><input type="text" name="alignment"><br><br>
-
-        The amount of experience points you start out with.<br>
-        Enter Experience Points : <br><input type="text" name="experiencePoints"><br><br>
-
-        These next fields are part of your stat block. This will determine most of actions your character can do in the game.<br>
+        
+        <form name="myform" action="characterSheet.jsp" method="post">
+        Please Enter Your Character's Name
+        <br><input type="text" name="characterName"><br><br>
+        
+        Please Enter Your Character's Speed
+        <br><input type="text" name="speed"><br><br>
+   
+        Please Enter Your Character's Height
+        <br><input type="text" name="height"><br><br>
+        
+        Please Enter Your Character's Weight
+        <br><input type="text" name="weight"><br><br>
+        
+        Please Enter Your Character's alignment
+        <br><input type="text" name="alignment"><br><br>
+        
+        Please Enter Your Character's Stats
         Enter Strength: <br><input type="text" name="strength"><br>
         Enter Dexterity: <br><input type="text" name="dexterity"><br>
         Enter Constitution: <br><input type="text" name="constitution"><br>
         Enter Intelligence: <br><input type="text" name="intelligence"><br>
         Enter Wisdom: <br><input type="text" name="wisdom"><br>
         Enter Charisma: <br><input type="text" name="charisma"><br><br>
+        
+        
+        
+        
+<!--         This will be the name of the character you have created.<br> -->
+<!--         Enter Character Name:<br><input type="text" name="characterName"><br><br> -->
 
-        This is something that can be earned from other players ingame.<br>
-        Enter Inspiration: <br><input type="text" name="inspiration"><br><br>
+<!--         This is will be the class you have picked and the level in which you want to start at.<br> -->
+<!--         Enter Class and level: <br><input type="text" name="classAndLevel"><br><br> -->
 
-        This is a bonus you get when your proficiency goes up with a skill or weapon.<br>
-        Enter Proficiency Bonus: <br><input type="text" name="proficiencyBonus"><br><br>
+<!--         This will be your characters history.<br> -->
+<!--         Enter Background: <br><input type="text" name="background"><br><br> -->
 
-        This is a ability check that you can perform when someone is targeting you.<br>
-        Enter Saving Throws*: <br><input type="text" name="savingThrows"><br><br>
+<!--         This is your real name.<br> -->
+<!--         Enter Player Name: <br><input type="text" name="playerName"><br><br> -->
 
-        These scores are checks that apply to specific scenarios.<br>
-        Enter Skills*: <br><input type="text" name="skills"><br><br>
+<!--         This is where you will choose what group your affiliated with.<br> -->
+<!--         Enter Faction: <br><input type="text" name="faction"><br><br> -->
 
-        This is your characters natural awareness of their surroundings.<br>
-        Enter Passive Wisdom (Perception): <br><input type="text" name="passiveWisdom"><br><br>
+<!--         This is where you will choose your race. Your Race determines looks and natural talents.<br> -->
+<!--         Enter Race: <br><input type="text" name="race"><br><br> -->
 
-        This is determined by the type of armor your character is wearing.<br>
-        Enter Armor Class: <br><input type="text" name="armorClass"><br><br>
+<!--         This is what your general outlook on other players/characters will be like.<br> -->
+<!--         Enter Alignment: <br><input type="text" name="alignment"><br><br> -->
 
-        This is how fast your character can act when danger appears.<br>
-        Enter Initiative: <br><input type="text" name="initiative"><br><br>
+<!--         The amount of experience points you start out with.<br> -->
+<!--         Enter Experience Points : <br><input type="text" name="experiencePoints"><br><br> -->
 
-        This is how far your character can move in one action.<br>
-        Enter Speed: <br><input type="text" name="speed"><br><br>
+<!--         These next fields are part of your stat block. This will determine most of actions your character can do in the game.<br> -->
+<!--         Enter Strength: <br><input type="text" name="strength"><br> -->
+<!--         Enter Dexterity: <br><input type="text" name="dexterity"><br> -->
+<!--         Enter Constitution: <br><input type="text" name="constitution"><br> -->
+<!--         Enter Intelligence: <br><input type="text" name="intelligence"><br> -->
+<!--         Enter Wisdom: <br><input type="text" name="wisdom"><br> -->
+<!--         Enter Charisma: <br><input type="text" name="charisma"><br><br> -->
 
-        This determines how the maximum amount of health your character will have.<br>
-        Enter Maximum Hit Points: <br><input type="text" name="currentHitPoints"><br><br>
+<!--         This is something that can be earned from other players ingame.<br> -->
+<!--         Enter Inspiration: <br><input type="text" name="inspiration"><br><br> -->
+
+<!--         This is a bonus you get when your proficiency goes up with a skill or weapon.<br> -->
+<!--         Enter Proficiency Bonus: <br><input type="text" name="proficiencyBonus"><br><br> -->
+
+<!--         This is a ability check that you can perform when someone is targeting you.<br> -->
+<!--         Enter Saving Throws*: <br><input type="text" name="savingThrows"><br><br> -->
+
+<!--         These scores are checks that apply to specific scenarios.<br> -->
+<!--         Enter Skills*: <br><input type="text" name="skills"><br><br> -->
+
+<!--         This is your characters natural awareness of their surroundings.<br> -->
+<!--         Enter Passive Wisdom (Perception): <br><input type="text" name="passiveWisdom"><br><br> -->
+
+<!--         This is determined by the type of armor your character is wearing.<br> -->
+<!--         Enter Armor Class: <br><input type="text" name="armorClass"><br><br> -->
+
+<!--         This is how fast your character can act when danger appears.<br> -->
+<!--         Enter Initiative: <br><input type="text" name="initiative"><br><br> -->
+
+<!--         This is how far your character can move in one action.<br> -->
+<!--         Enter Speed: <br><input type="text" name="speed"><br><br> -->
+
+<!--         This determines how the maximum amount of health your character will have.<br> -->
+<!--         Enter Maximum Hit Points: <br><input type="text" name="currentHitPoints"><br><br> -->
 
         <!--This shows how much health you have remaining from your maximum.<br>
         Enter Current Hit Points: <br><input type="text" name="currentHitPoints"><br><br>
-
         This is hit points you have gained from spells or other buffs.<br>
         Enter Temporary Hit Points: <br><input type="text" name="tempoaryHitPoints"><br><br>
-
         This determines how much your character can heal when resting.<br>
         Enter Hit Dices: <br><input type="text" name="hitDices"><br><br>
-
         This is used to determine if your character has died or has just fallen unconscious.<br>
         Enter Successes/Failures/Deaths/Saves: <br><input type="text" name="SFDS"><br><br>
-
         This is where you can enter information about your physical attacks or spells.<br>
         Enter Attacking and SpellCasting : <br><textarea type="text" name="attackingSpellcasting" style="width:300px; height:200px;"></textarea> <br>
-
         This is where you would record all the items your character can use.<br>
         Enter Equipment*: <br><textarea type="text" name="equipment" style="width:300px; height:200px;"></textarea><br><br>
-
         These next fields are used to fill in information for the roleplay aspect of the game.<br>
-
         This is a general description of your character.<br>
         Enter Personality Traits: <br><textarea type="text" name="personalityTraits" style="width:300px; height:200px;"></textarea><br><br>
-
         This is things your character full heartedly believes in.<br>
         Enter Ideals:<br> <textarea type="text" name="ideals" style="width:300px; height:200px;"></textarea><br><br>
-
         This is characters,places or events that your character is connected to.<br>
         Enter Bonds: <br><textarea type="text" name="bonds" style="width:300px; height:200px;"></textarea><br><br>
-
         This is any weakness that your character has.<br>
         Enter Flaws: <br><textarea type="text" name="flaws" style="width:300px; height:200px;"></textarea><br><br><br>
-
-
         Enter Features and Traits: <br><textarea type="text" name="featuresAndTraits" style="width:300px; height:200px;"></textarea><br>
         Enter Allies and Organization: <br><textarea type="text" name="alliesAndOrganization" style="width:300px; height:200px;"></textarea><br>
         Enter Additional Features and Traits: <br><textarea type="text" name="additionalFeaturesAndTraits" style="width:300px; height:200px;"></textarea><br>
         Enter Treasure: <br><textarea type="text" name="treasure" style="width:300px; height:200px;"></textarea><br><br>
-
         This is where you would input what languages your character knows and other proficiencies that are not part of the main stat block.<br>
         Enter Other Proficiencies and Languages: <br><textarea type="text" name="languages" style="width:300px; height:200px;"></textarea><br><br>
-
         This is where you can upload a picture of your characters appearance.<br>
         Enter Character Appearance: <br><input type="text" name="appearance"><br><br>
-
         This is where you can give your character any kind of backstory you can come up with.<br>
         Enter Character Backstory: <br><textarea type="text" name="backstory" style="width:300px; height:200px;"></textarea><br><br>
-
         These next fields is where you can enter general appearance information about your character.<br>
         Enter Age: <br><input type="text" name="age"><br>
         Enter Height: <br><input type="text" name="height"><br>
