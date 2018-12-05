@@ -12,7 +12,7 @@
         <h4>This is a list of characters that have been made!</h4>
         </div>
         <div class="col-md-3:" style="padding:1%;">
-        <a href="http://localhost:9996/TestApp/characterForm.html" class="btn btn-info" role="button">Create New Character</a>
+        <a href="http://localhost:8080/djskjxks/characterForm.html" class="btn btn-info" role="button">Create New Character</a>
         </div>
         </div>
         <%--
@@ -65,41 +65,50 @@
             String hair = request.getParameter("hair");
         --%>
         
-
+	<div class="container-fluid">
         <div class="row" style=" padding: 2%; border: 1px solid black; border-radius: 15px; align: center; background-color:rgb(128,0,0);">
+            <div class="container-fluid">
             <div class="row">
-            <div class="col-md-12" style="margin: 1%; padding: 2%;">
-            <div class="col-md-11" style="border: 1px solid black; border-radius: 15px; float:left; background-color:white; margin: 1%; height: 50px; ">
+            <div class="col-md-12" style="border: 1px solid black; border-radius: 15px; float:left; background-color:white; margin: 1%; height: 50px; ">
                 Character Name: <span>${param.characterName}</span>
             </div>
-            <div class="col-md-11" style="border: 1px solid black; border-radius: 15px; float:left;background-color:white; margin: 1%; height: 100px;">
+            </div>
+            </div>
+            <div class="container-fluid">
+           
+           <div class="col-md-12" style="border: 1px solid black; border-radius: 15px; float:left;background-color:white; margin: 1%; height: 100px;">
                 <div class="row">
                     <div class="col-md-3" align="center">Speed <br>${param.speed}</div>
                     <div class="col-md-3" align="center">Height <br>${param.height} </div>
                     <div class="col-md-3" align="center">Weight <br>${param.weight}</div>
                     <div class="col-md-3" align="center">Alignment<br> ${param.alignment}</div>
-
+			</div>
                 </div>
             </div>
-            </div>
-        </div>
-            <div class="col-md-3:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+<!--             </div> -->
+            <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
             Strength <br>${param.strength}
             </div>
-            <div class="col-md-3:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
             Dexterity <br>${param.dexterity}
             </div>
-            <div class="col-md-3:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
             Constitution <br>${param.constitution}
             </div>
-            <div class="col-md-3:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
             Intelligence <br>${param.intelligence}
             </div>
-            <div class="col-md-3:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
             Wisdom <br>${param.wisdom}
             </div>
-            <div class="col-md-3:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
             Charisma <br>${param.charisma}
+            </div>
+            </div>
+            </div>
+            </div>
             </div>
 <!--             <div class="col-md-3:" style="width:200px;"> -->
 <!--                 <div class="col-md-3:" style="border: 1px solid black; border-radius: 15px; padding: 2%; width:175px; background-color:rgb(115, 115, 38);"> -->
@@ -129,7 +138,7 @@
                 <p style="border: 1px solid black; border-radius: 15px; height: 300px; width:350px; background-color: white;" align="center" >Other Proficiencies And Languages ${languages}</p>
                 <p style="border: 1px solid black; border-radius: 15px; height: 500px; width:350px; background-color: white;" align="center">Character Appearance ${appearance}</p>
                 <p style="border: 1px solid black; border-radius: 15px; height: 500px; width:350px; background-color: white;" align="center">Character Back-Story ${backstory}</p>--%>
-            </div>
+<!--   this one          </div> -->
 
             <%--
             <div class="col-md-3"
