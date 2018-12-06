@@ -3,7 +3,10 @@
 
 <t:wrapper>
     <jsp:attribute name="header">
-      <h1>Character List</h1>
+        <div class="pageHeader">
+            <div class="fas fa-address-card"></div>
+            <div>Character Sheet</div>
+        </div>
     </jsp:attribute>
 
     <jsp:body>
