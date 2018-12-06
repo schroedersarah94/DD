@@ -6,12 +6,12 @@ body {
 
 /* Row Styling */
 .spell-row {
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
     margin: 3px;
     display: inline-flex;
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: #a7a5a5 inset 0px 0px 1px 0px;
+    /*border-radius: 5px;
+    box-shadow: #a7a5a5 inset 0px 0px 1px 0px;*/
 }
 
 /* Flex-styles for responsive table layout */
@@ -28,7 +28,7 @@ body {
     flex: 3;
 }
 
-.spell-headerRow, .monster-headerRow {
+.spell-headerRow, .monster-headerRow, .item-headerRow {
     display: flex;
     font-size: 26px;
     margin-bottom: .5em;

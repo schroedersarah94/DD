@@ -13,17 +13,17 @@
 
     <jsp:body>
 
-        <div class="spell-pageInfo">View base-level spells and spell details here. Search for a specific spell using the search box below.</div>
+        <!--<div class="spell-pageInfo">View base-level spells and spell details here. Search for a specific spell using the search box below.</div>-->
 
         <div class="spell-content">
-            <div class="col-10 mx-auto">
+            <!--<div class="col-10 mx-auto">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Search spells..." aria-label="Search spells..." aria-describedby="basic-addon2">
                     <div class="input-group-append">
                         <span class="input-group-text" id="basic-addon2"><span class="fa fa-search"></span></span>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
             <div class="col-12 spell-headerRow">
                 <div class="spell-name">Spell Name</div>

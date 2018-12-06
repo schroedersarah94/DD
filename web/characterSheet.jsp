@@ -1,6 +1,13 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
+
+<!-- TODO: create way to edit character sheet if unsatisfied
+        maybe make the form the character sheet to make things a bit easier?
+            idea: load in the form when editing the character, remove when in read only mode,
+            This would reduce # of pages needed, and reduce amount of code needed to do everything! -->
+
+
 <t:wrapper>
     <jsp:attribute name="header">
         <div class="pageHeader">
@@ -10,14 +17,14 @@
     </jsp:attribute>
 
     <jsp:body>
-         <div class="row">
+         <!--<div class="row">
        <div class="col-md-6:" style="padding:1%;">
         <h4>This is a list of characters that have been made!</h4>
         </div>
         <div class="col-md-3:" style="padding:1%;">
         <a href="http://localhost:8080/djskjxks/characterForm.html" class="btn btn-info" role="button">Create New Character</a>
         </div>
-        </div>
+        </div>-->
         <%--
             String characterName = request.getParameter("characterName");
             String className = request.getParameter("className");

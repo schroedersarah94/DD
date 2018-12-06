@@ -14,7 +14,7 @@ public class Spell {
             System.out.println("Opened database successfully");
 
             stmt = c.createStatement();
-            ResultSet rs = stmt.executeQuery( "SELECT * FROM CHARACTER;" );
+            ResultSet rs = stmt.executeQuery( "SELECT * FROM SPELL_TYPES;" );
 
             while ( rs.next() ) {
                 int id = rs.getInt("id");
@@ -30,6 +30,6 @@ public class Spell {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
             System.exit(0);
         }
-        return "Banana";
+        return "test";
     }
 }

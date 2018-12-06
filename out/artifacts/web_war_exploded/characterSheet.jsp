@@ -3,11 +3,21 @@
 
 <t:wrapper>
     <jsp:attribute name="header">
-      <h1>Character List</h1>
+        <div class="pageHeader">
+            <div class="fas fa-address-card"></div>
+            <div>Character Sheet</div>
+        </div>
     </jsp:attribute>
 
     <jsp:body>
+         <div class="row">
+       <div class="col-md-6:" style="padding:1%;">
         <h4>This is a list of characters that have been made!</h4>
+        </div>
+        <div class="col-md-3:" style="padding:1%;">
+        <a href="http://localhost:8080/djskjxks/characterForm.html" class="btn btn-info" role="button">Create New Character</a>
+        </div>
+        </div>
         <%--
             String characterName = request.getParameter("characterName");
             String className = request.getParameter("className");
@@ -57,56 +67,81 @@
             String skin = request.getParameter("skin");
             String hair = request.getParameter("hair");
         --%>
-        <div class="row">
-            <div class="col-md-4" style="border: 1px solid black; border-radius: 15px; float:left;">
+        
+	<div class="container-fluid">
+        <div class="row" style=" padding: 2%; border: 1px solid black; border-radius: 15px; align: center; background-color:rgb(128,0,0);">
+            <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-12" style="border: 1px solid black; border-radius: 15px; float:left; background-color:white; margin: 1%; height: 50px; ">
                 Character Name: <span>${param.characterName}</span>
             </div>
-            <div class="col-md-6" style="border: 1px solid black; border-radius: 15px; float:left;">
+            </div>
+            </div>
+            <div class="container-fluid">
+           
+           <div class="col-md-12" style="border: 1px solid black; border-radius: 15px; float:left;background-color:white; margin: 1%; height: 100px;">
                 <div class="row">
-                    <div class="col-md-3" align="center">Class and Level ${param.classAndLevel}</div>
-                    <div class="col-md-3" align="center">Background ${param.background} </div>
-                    <div class="col-md-3" align="center">Player Name${param.playerName}</div>
-                    <div class="col-md-3" align="center">Faction ${param.faction}</div>
-
-                </div>
-                <div class="row">
-                    <div class="col-md-3" align="center">Race ${param.race}</div>
-                    <div class="col-md-3" align="center">Alignment ${param.alignment}</div>
-                    <div class="col-md-3" align="center">Experience Points ${param.experiencePoints}</div>
+                    <div class="col-md-3" align="center">Speed <br>${param.speed}</div>
+                    <div class="col-md-3" align="center">Height <br>${param.height} </div>
+                    <div class="col-md-3" align="center">Weight <br>${param.weight}</div>
+                    <div class="col-md-3" align="center">Alignment<br> ${param.alignment}</div>
+			</div>
                 </div>
             </div>
-        </div>
-
-        <div class="row" style=" padding: 2%; border: 1px solid black; border-radius: 15px; align: center; background-color:rgb(128,0,0);">
-            <div class="col-md-3:" style="width:200px;">
-                <div class="col-md-3:" style="border: 1px solid black; border-radius: 15px; padding: 2%; width:175px; background-color:rgb(115, 115, 38);">
-                    <p style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
-                        Strength ${param.strength}
-                    </p>
-                    <br>
-                    <p style="height: 150px; width: 150px; align: left; margin: 1%; padding: 2%;border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
-                        Dexterity ${param.dexterity}
-                    <br>
-                    <p style="height: 150px; width: 150px; align: left; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
-                        Constitution ${param.constitution}
-                    <br>
-                    <p style="height: 150px; width: 150px; align: left; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
-                        Intelligence ${intelligence}
-                    <br>
-                    <p style="height: 150px; width: 150px; align: left; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
-                        Wisdom ${wisdom}
-                    <br>
-                    <p style="height: 150px; width: 150px; align: left; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
-                        Charisma ${charisma}
-                    <br>
-                </div>
-                <br>
+<!--             </div> -->
+            <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+            Strength <br>${param.strength}
+            </div>
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+            Dexterity <br>${param.dexterity}
+            </div>
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+            Constitution <br>${param.constitution}
+            </div>
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+            Intelligence <br>${param.intelligence}
+            </div>
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+            Wisdom <br>${param.wisdom}
+            </div>
+            <div class="col-md-2:" style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center">
+            Charisma <br>${param.charisma}
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+<!--             <div class="col-md-3:" style="width:200px;"> -->
+<!--                 <div class="col-md-3:" style="border: 1px solid black; border-radius: 15px; padding: 2%; width:175px; background-color:rgb(115, 115, 38);"> -->
+<!--                     <p style="height: 150px; width: 150px; align: center; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center"> -->
+<%--                         Strength ${param.strength} --%>
+<!--                     </p> -->
+<!--                     <br> -->
+<!--                     <p style="height: 150px; width: 150px; align: left; margin: 1%; padding: 2%;border: 1px solid black; border-radius: 15px; background-color: white;" align="center"> -->
+<%--                         Dexterity ${param.dexterity} --%>
+<!--                     <br> -->
+<!--                     <p style="height: 150px; width: 150px; align: left; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center"> -->
+<%--                         Constitution ${param.constitution} --%>
+<!--                     <br> -->
+<!--                     <p style="height: 150px; width: 150px; align: left; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center"> -->
+<%--                         Intelligence ${param.intelligence} --%>
+<!--                     <br> -->
+<!--                     <p style="height: 150px; width: 150px; align: left; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center"> -->
+<%--                         Wisdom ${param.wisdom} --%>
+<!--                     <br> -->
+<!--                     <p style="height: 150px; width: 150px; align: left; margin: 1%; padding: 2%; border: 1px solid black; border-radius: 15px; background-color: white;" align="center"> -->
+<%--                         Charisma ${param.charisma} --%>
+<!--                     <br> -->
+<!--                 </div> -->
+<!--                 <br> -->
                 <%--<p style="border: 1px solid black; border-radius: 15px; width:350px; align: right; background-color: white;" align="center">
                     Passive Wisdom (Perception) ${passiveWisdom}
                 <p style="border: 1px solid black; border-radius: 15px; height: 300px; width:350px; background-color: white;" align="center" >Other Proficiencies And Languages ${languages}</p>
                 <p style="border: 1px solid black; border-radius: 15px; height: 500px; width:350px; background-color: white;" align="center">Character Appearance ${appearance}</p>
                 <p style="border: 1px solid black; border-radius: 15px; height: 500px; width:350px; background-color: white;" align="center">Character Back-Story ${backstory}</p>--%>
-            </div>
+<!--   this one          </div> -->
 
             <%--
             <div class="col-md-3"
@@ -190,7 +225,6 @@
                         <div class="col-md-3" align="center" >Age<hr></hr><%out.println(age);%></div>
                         <div class="col-md-3" align="center">Height<hr></hr><%out.println(height);%> </div>
                         <div class="col-md-3" align="center">Weight<hr></hr><%out.println(weight);%> </div>
-
                     </div>
                     <hr></hr>
                     <div class="row">

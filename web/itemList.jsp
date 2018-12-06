@@ -3,6 +3,32 @@
 
 <t:wrapper>
     <jsp:attribute name="header">
+        <style>
+            div[id*="showDetails"] {
+                border: 2px solid black;
+                -webkit-border-radius: 10px;
+                padding: 15px 35px;
+                width: 80%;
+                display: none;
+                margin: auto;
+            }
+            .item-headerRow, .item-row {
+                padding-bottom: 10px;
+                width: 80%;
+                margin: auto;
+            }
+            .item-headerRow div, .item-row div {
+                flex-direction: row;
+                flex: 1;
+                padding-bottom: 5px;
+            }
+            .item-content > .item-row.row {
+                padding: 15px 0px;
+            }
+            .active-details {
+                display: block !important;
+            }
+        </style>
         <div class="pageHeader">
             <div class="fas fa-archive"></div>
             <div>Item List</div>
@@ -11,35 +37,8 @@
 
     <jsp:body>
         <head>
-            <script>
-                function nicksFunction() {
-                   /* var x = document.getElementById("showDetails");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    } else {
-                        x.style.display = "none";
-                    }*/
-
-                }
-            </script>
             <style>
-                .item-headerRow, .item-row {
-                    padding-bottom: 10px;
-                    display: flex;
-                    width: 80%;
-                    margin: auto;
-                }
-                .item-headerRow div, .item-row div {
-                    flex-direction: row;
-                    flex: 1;
-                    padding-bottom: 5px;
-                }
-                #showDetails1, #showDetails2, #showDetails3 {
-                    display: none;
-                }
-                .active-details {
-                    display: block !important;
-                }
+
             </style>
         </head>
 
@@ -88,7 +87,7 @@
                     11 + DEX
                 </div>
                 <div class="col-md-3">
-                    <button onclick="document.getElementById('showDetails1').classList.toggle('active-details')" >Show</button>
+                    <button class="btn btn-primary" onclick="document.getElementById('showDetails1').classList.toggle('active-details')" >Details</button>
                 </div>
             </div>
 
@@ -129,7 +128,7 @@
                     N/A
                 </div>
                 <div class="col-md-3">
-                    <button onclick="document.getElementById('showDetails2').classList.toggle('active-details')" >Show</button>
+                    <button class="btn btn-primary" onclick="document.getElementById('showDetails2').classList.toggle('active-details')" >Details</button>
                 </div>
             </div>
 
@@ -170,7 +169,7 @@
                     N/A
                 </div>
                 <div class="col-md-3">
-                    <button onclick="document.getElementById('showDetails3').classList.toggle('active-details')" >Show</button>
+                    <button class="btn btn-primary" onclick="document.getElementById('showDetails3').classList.toggle('active-details')" >Details</button>
                 </div>
             </div>
 

@@ -11,6 +11,10 @@
     </jsp:attribute>
 
     <jsp:body>
+        <%--
+            String signUser = request.getParameter("signupUsername");
+            String signPass = request.getParameter("signupPassword");
+        --%>
         <head>
             <style type="text/css">
                 .circle {
@@ -32,9 +36,7 @@
                     <br/>
                     <br/>
                     <br/>
-                    <div>This is a list of monsters. It will give you the stats of
-                        each monster and a little description of them.
-                    </div>
+                    <div>A list of monsters you may encounter in a campaign. Reference their stats and traits here.</div>
                     <br/>
                     <br/>
                     <br/>
@@ -47,8 +49,7 @@
                     <br/>
                     <br/>
                     <br/>
-                    <div>This will give you a list of items in Dungeons and
-                        Dragons. It will give you the name and base stats of each item
+                    <div>A list of Items that can be found in the game. Learn the basics about item abilities and damage here.
                     </div>
                     <br/>
                     <br/>
@@ -61,8 +62,7 @@
                      style="color: black; text-decoration: none; border: 1px solid black; border-radius: 15px; margin: 1%; padding: 2%; max-width: 20%;">
                     <h2 align="center">Character Customization</h2>
                     <br/>
-                    <div>This is where you can create your character. Hopefully
-                        this will make the process of making your character easier.
+                    <div>Build a brand new character to start your campaign off right! Already created one? You can view your previously created characters here, too!
                     </div>
                     <br/>
                     <br/>
@@ -77,8 +77,7 @@
                     <br/>
                     <br/>
                     <br/>
-                    <div>This will give you a list of spells in Dungeons and
-                        Dragons. It will give you the name and base stats of each spell
+                    <div>View a list of base level spells here! Reference spell ranges, levels, and effects here.
                     </div>
                     <br/>
                     <br/>
@@ -91,7 +90,7 @@
                     <br/>
                     <br/>
                     <br/>
-                    <div>This is where you can roll your dice depending on what spell, attack, or action you are using</div>
+                    <div>Don't have any dice on hand? Use the Dungeon Dynamics Die Roller Tool! Choose from a variety of dice to make your next roll a good one.</div>
                     <br/>
                     <br/>
                     <br/>
