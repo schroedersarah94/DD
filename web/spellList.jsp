@@ -7,7 +7,7 @@
     <jsp:attribute name="header">
         <div class="pageHeader">
             <div class="fas fa-hat-wizard"></div>
-            <div>Spell Dictionary</div>
+            <div>Spell List</div>
         </div>
     </jsp:attribute>
 

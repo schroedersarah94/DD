@@ -4,8 +4,8 @@
 <t:wrapper>
     <jsp:attribute name="header">
         <div class="pageHeader">
-            <div class="fas fa-dragon"></div>
-            <h1>Item List</h1>
+            <div class="fas fa-archive"></div>
+            <div>Item List</div>
         </div>
     </jsp:attribute>
 
